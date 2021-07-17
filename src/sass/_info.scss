@@ -1,0 +1,55 @@
+.info {
+  position: relative;
+  @include breakpoint-up(large) {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+    @include breakpoint-up(large) {
+      flex-direction: unset;
+    }
+  }
+
+  &__image-box {
+    background-image: url("../bg-images/image-interactive.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 362px;
+    height: 250px;
+    margin: 1rem;
+    @include breakpoint-up(medium) {
+      width: 730px;
+      height: 464px;
+    }
+    @include breakpoint-up(large) {
+      background-image: url("../bg-images/mobile-image-interactive.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 728px;
+      height: 502px;
+    }
+  }
+
+  &__text-box {
+    text-align: center;
+    @include breakpoint-up(large) {
+      position: absolute;
+      bottom: -2px;
+      background: $White;
+      margin-left: 30rem;
+      max-width: 35%;
+      padding: 2rem;
+      text-align: left;
+    }
+
+    h1 {
+      color: $Black;
+      text-transform: uppercase;
+      font-family: $JosefinSans;
+    }
+  }
+}

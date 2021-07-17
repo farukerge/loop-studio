@@ -1,0 +1,56 @@
+//font family
+
+$font-sm: 0.9375rem;
+$Alata: "Alata", sans-serif;
+$JosefinSans: "Josefin Sans", sans-serif;
+
+// Text
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: $White;
+}
+
+h1 {
+  font-size: 2.31rem;
+
+  font-family: $JosefinSans;
+
+  @include breakpoint-up(large) {
+    font-size: 3.9875;
+    font-family: $JosefinSans;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+  color: $Black;
+  font-family: $JosefinSans;
+
+  @include breakpoint-up(large) {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+    font-family: $JosefinSans;
+  }
+}
+
+p {
+  font-size: $font-sm;
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+  color: $DarkGray;
+  font-family: $Alata;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  font-size: $font-sm;
+  color: $White;
+  font-size: 15px;
+}

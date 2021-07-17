@@ -1,0 +1,44 @@
+.hero {
+  background-image: url("../bg-images/mobile-image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    @include breakpoint-up(large) {
+      min-width: 1160px;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    background-image: url("../bg-images/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75.36vh;
+  }
+
+  &__textBox {
+    font-family: $JosefinSans;
+    border: 2px $White solid;
+
+    h1 {
+      padding: 1rem;
+    }
+
+    @include breakpoint-up(medium) {
+      width: 55%;
+    }
+
+    @include breakpoint-up(large) {
+      width: 70%;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
